@@ -108,9 +108,9 @@
               <img src="../assets/img/yamaha1.jpg" alt="...">
             </div>
             <div class="card-body">
-              <h5 class="card-title"><a href="#"><img src="../assets/img/logoyamaha.jpg" class="logomarque" alt="...">YAMAHA</a></h5>
+              <h5 class="card-title"><a href="../controller/list_yamaha.php"><img src="../assets/img/logoyamaha.jpg" class="logomarque" alt="...">YAMAHA</a></h5>
               <p class="card-text">Yamaha Motor Company est une société d'ingénierie automobile filiale de Yamaha Corporation qui a développé des moteurs de compétition destinés à la Formule 1. De 1982 à 1997, la société a été dirigée par John Judd, qui possédait déjà sa propre officine de conception de moteurs.</p>
-              <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Voir la liste de moto de cette marque</a></div>
+              <div class="read-more"><a href="../controller/list_yamaha.php"><i class="icofont-arrow-right"></i> Voir la liste de moto de cette marque</a></div>
             </div>
           </div>
         </div>
@@ -120,9 +120,9 @@
               <img src="../assets/img/motoktm.jpg" alt="...">
             </div>
             <div class="card-body">
-              <h5 class="card-title"><a href="#"><img src="../assets/img/ktmlogo1.png" class="logomarque" alt="...">KTM</a></h5>
+              <h5 class="card-title"><a href="../controller/list_ktm.php"><img src="../assets/img/ktmlogo1.png" class="logomarque" alt="...">KTM</a></h5>
               <p class="card-text">KTM Bike Industries et KTM-Sportmotorcycle AG représentent la marque KTM. KTM est un constructeur de vélos et de motos autrichien. Les usines sont situées à Mattighofen au nord de Salzbourg.</p>
-              <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Voir la liste</a></div>
+              <div class="read-more"><a href="../controller/list_ktm.php"><i class="icofont-arrow-right"></i> Voir la liste de moto de cette marque</a></div>
             </div>
           </div>
 
@@ -133,9 +133,9 @@
               <img src="../assets/img/moto24.jpg" alt="...">
             </div>
             <div class="card-body">
-              <h5 class="card-title"><a href="#"><img src="../assets/img/hondalogo.png" class="logomarque" alt="...">HONDA</a></h5>
+              <h5 class="card-title"><a href="../controller/list_honda.php"><img src="../assets/img/hondalogo.png" class="logomarque" alt="...">HONDA</a></h5>
               <p class="card-text">Honda Motor Co., Ltd, ou plus simplement Honda, est un constructeur automobile. C'est également un constructeur de motocyclettes, d'ATVs, de scooters, d'avions d'affaires, de générateurs électriques, de moteurs de bateaux et d'équipements de jardinage et de bricolage.</p>
-              <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Voir la liste</a></div>
+              <div class="read-more"><a href="../controller/list_honda.php"><i class="icofont-arrow-right"></i> Voir la liste de moto de cette marque</a></div>
             </div>
           </div>
         </div>
@@ -145,9 +145,9 @@
               <img src="../assets/img/moto18.jpg" alt="...">
             </div>
             <div class="card-body">
-              <h5 class="card-title"><a href="#"><img src="../assets/img/suzukilogo.png" class="logomarque" alt="...">SUZUKI</a></h5>
+              <h5 class="card-title"><a href="../controller/list_suzuki.php"><img src="../assets/img/suzukilogo.png" class="logomarque" alt="...">SUZUKI</a></h5>
               <p class="card-text">Suzuki Motor Corporation est un constructeur japonais de motos, d'automobiles et de moteurs de bateaux ; il est avant tout un important fabricant de motos.</p>
-              <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Voir la liste</a></div>
+              <div class="read-more"><a href="../controller/list_suzuki.php"><i class="icofont-arrow-right"></i> Voir la liste de moto de cette marque</a></div>
             </div>
           </div>
         </div>
