@@ -1,0 +1,92 @@
+
+body {
+ background-image: url(images/drapeau.png);
+/* background-repeat: no-repeat; */
+ background-size: contain;
+background-position:center;
+    /* background: linear-gradient(217deg, rgba(250, 47, 47, 0.8), rgba(253, 46, 46, 0) 70.71%),
+    linear-gradient(127deg, rgba(56, 250, 56, 0.8), rgba(109, 47, 252, 0) 70.71%),
+    linear-gradient(336deg, rgba(31, 31, 252, 0.8), rgba(42, 42, 250, 0) 70.71%);
+    color: rgb(87, 86, 86); */
+    /* background: linear-gradient(#ff0101, #028a1f); */
+ /* background-color: rgb(62, 226, 238); */
+    /* background: radial-gradient(ellipse at top, #ff0000, transparent),
+            radial-gradient(ellipse at bottom, #028a1f, transparent); */
+            background: radial-gradient(circle at 0%, rgba(245, 81, 81, 0.486), rgba(208, 248, 115, 0.596) 50%, #cacaca 75%, #002a40 75%);
+}
+.feuillebox{
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2),0 6px 17px 0 rgba(0,0,0,0.19);
+    
+
+}
+form{
+    margin: 10% 10%;
+}
+fieldset{
+    width: 40%;
+    padding: 7% 5%;
+    background-color: rgba(255, 255, 255, 0.596);
+    /* background: linear-gradient(180deg,#448AFF, #002a40); */    
+    border: 1.5px solid rgb(239,152,61);
+    border-radius: 10px;
+    /* background-image: url(images/24.gif);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center; */
+}
+
+.input-group-text{
+    border:none;
+    background-color: rgba(255, 255, 255, 0.540);
+    padding: 5px;
+}
+.btn{
+    width: 100%; 
+    height: 50px;
+    /* background-image: url(images/drapeau.png); */
+/* background-repeat: no-repeat; */
+/* background-size: cover;
+background-position:center; */
+    /* background: linear-gradient(180deg,#448AFF, #002a40); */
+     background-color: rgb(8,2,70);
+     color:rgb(239,152,61);
+     font-weight: bold;
+     /* background: linear-gradient(#ff0101, #028a1f); */
+    /* background-color: #002a40; */
+    /* background-color: #028a1f; */
+    /* background: linear-gradient(#e74c3c, #2c2a2a); */
+    border: none;
+}
+.photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 13%;
+    left: 46%;
+    position: absolute;
+    /* background-image: url(images/drapeau.png); */
+/* background-repeat: no-repeat; */
+/* background-size: cover;
+background-position:center; */
+    /* background: linear-gradient(180deg,#448AFF, #002a40); */
+    /* background-color: #002a40; */
+     background-color: rgb(83, 83, 83);
+    /* background: linear-gradient(#e74c3c, #2c2a2a); */
+    /* background: linear-gradient(#ff0101, #028a1f); */
+}
+h3{
+    margin: 0px 0 20px 0;
+}
+.form-control{
+    background: rgba(255, 255, 255, 0.540);
+    height: 30px;
+    margin: 0 10px 20px 10px;
+}
+.form-row{
+    margin-bottom: 20px;
+}
+.input-group{
+    /* border:1px solid yellow; */
+    border-radius: .25rem;
+}
+
