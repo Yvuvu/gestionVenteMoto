@@ -1,17 +1,16 @@
-<?php 
-require_once '../model/MotoManager.Class.php';
+<?php
 require_once '../model/autoload.php';
-require_once '../model/connexion.php';
 
-
-$bd=dbConnect();
-$manager=new MotoManager($bd);
 
 if (isset($_POST['serialNumber']) and $_POST['brand'] and $_POST['model'] and $_POST['cylinder'] and $_POST['category'] and $_POST['price'])
     {
-        $manager = new MotoManager($bd);
+        $db=new DbConnect();
+        $conn=$db->getDb();      
+        $manager = new MotoManager($conn);
         $moto = new Moto($_POST);
         $manager->add($moto);
+
+        header("Location: ../controller/register.php");
         // echo $_POST['serialNumber'];
     }
 

@@ -1,19 +1,21 @@
 <?php
 require_once 'Moto.Class.php';
-require_once 'connexion.php';
+require_once 'DbConnect.Class.php';
 class MotoManager
 {
     private $db; //Instance de PDO.
 
     public function __construct($db)
     {
+        // $this->db=$GLOBALS["db"];
         $this->db = $db;
         // $this->setDb($db);
     }
 
     public function add(Moto $moto)
     {
-      $db = $this->dbConnect();
+      $db=new DbConnect();
+      //  $conn=$db->getDb();
         $q = $this->db->prepare('INSERT INTO moto SET serialNumber =:serialNumber, brand =:brand, model =:model, cylinder =:cylinder, category =:category, price =:price');
         $q->bindValue(':serialNumber', $moto->getSerialNumber());
         $q->bindValue(':brand', $moto->getBrand());
@@ -42,7 +44,6 @@ class MotoManager
     
   public function getList()
   {
-    $db = $this->dbConnect();
     $moto = [];
     $q = $this->db->query('SELECT * FROM moto ORDER BY brand');
     $rows = $q->fetchAll();
@@ -55,16 +56,61 @@ class MotoManager
     return $moto;
   }
 
-  function dbConnect()
+  public function list_yamaha()
   {
-      try{
-          $db = new PDO('mysql:host=localhost;dbname=vente', 'root', '');
-      }
-      catch (Exception $e) {
-          $e->getMessage();
-      }
-       return $db;
-      }
+    $moto = [];
+    $q=$this->db->query('SELECT * FROM moto WHERE brand="yamaha"');
+    $rows = $q->fetchAll();
+    $q->closeCursor();
+      
+    foreach ($rows as $row) {
+ 
+    $moto[] = new Moto($row);
+    }
+    return $moto;
+  }
+
+  public function list_ktm()
+  {
+    $moto = [];
+    $q=$this->db->query('SELECT * FROM moto WHERE brand="ktm"');
+    $rows = $q->fetchAll();
+    $q->closeCursor();
+      
+    foreach ($rows as $row) {
+ 
+    $moto[] = new Moto($row);
+    }
+    return $moto;
+  }
+
+  public function list_honda()
+  {
+    $moto = [];
+    $q=$this->db->query('SELECT * FROM moto WHERE brand="honda"');
+    $rows = $q->fetchAll();
+    $q->closeCursor();
+      
+    foreach ($rows as $row) {
+ 
+    $moto[] = new Moto($row);
+    }
+    return $moto;
+  }
+
+  public function list_suzuki()
+  {
+    $moto = [];
+    $q=$this->db->query('SELECT * FROM moto WHERE brand="suzuki"');
+    $rows = $q->fetchAll();
+    $q->closeCursor();
+      
+    foreach ($rows as $row) {
+ 
+    $moto[] = new Moto($row);
+    }
+    return $moto;
+  }
 
 //   function getList(){
 //     $moto=$this->db->query("SELECT * FROM moto");
@@ -72,18 +118,18 @@ class MotoManager
 // }
 
 
-  public function list_yamaha()
-    {
-        $moto=[];
-        $q=$this->db->query('SELECT * FROM moto WHERE marque="yamaha"');
-        $rows=$q->fetchAll();
-        $q->closeCursor();
-        foreach ($rows as $row)
-        {
-            $moto[]=new Moto($row);
-        }
-        return $moto;
-    }
+  // public function list_yamaha()
+  //   {
+  //       $moto=[];
+  //       $q=$this->db->query('SELECT * FROM moto WHERE marque="yamaha"');
+  //       $rows=$q->fetchAll();
+  //       $q->closeCursor();
+  //       foreach ($rows as $row)
+  //       {
+  //           $moto[]=new Moto($row);
+  //       }
+  //       return $moto;
+  //   }
 
   //   public function liste_rato()
   //   {

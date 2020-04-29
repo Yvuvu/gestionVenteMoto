@@ -6,8 +6,8 @@ $db=new DbConnect();
 $conn=$db->getDb();      
 $manager = new MotoManager($conn);
 
-$list = $manager->getList();
+$list = $manager->list_suzuki();
 
-require_once '../view/listView.php';
+require '../view/suzukiView.php';
 
 ?>

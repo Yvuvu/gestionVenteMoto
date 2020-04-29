@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>yamaha</title>
+  <title>list_yamaha</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -32,28 +32,29 @@
   <link href="../assets/css/stock.css" rel="stylesheet">
 </head>
 
-<body class="body-stock">
+<body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top stock-header">
     <div class="container">
 
       <div class="logo float-left">
-        <h1 class="text-light"><a href="../index.html"><img src="../assets/img/logo1.jpg" alt="" class="img-fluid"><span>Vente de motos</span></a></h1>
+        <h1 class="text-light"><a href="../controller/home.php"><img src="../assets/img/logo1.jpg" alt="" class="img-fluid"><span>Vente de motos</span></a></h1>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li><a href="../index.html">Accueil</a></li>
-          <li><a href="view/enregistrer.html">Enregistrer</a></li>
-          <li class="active"><a href="view/stock.html">Stock</a></li>
-          <li><a href="view/vendre.html">Vendre</a></li>
+          <li><a href="../controller/home.php">Accueil</a></li>
+          <li><a href="../controller/register.php">Enregistrer</a></li>
+          <li class="active"><a href="../controller/stock.php">Stock</a></li>
+          <li><a href="../controller/sell.php">Vendre</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
 <main id="main">
+    <h1>Liste de toutes les motos de marque YAMAHA en stock</h1>
         <table class="table table-responsive table-bordered table-hover text-center" id="list">                
             <thead>
                 <tr>

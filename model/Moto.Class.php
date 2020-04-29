@@ -1,5 +1,5 @@
 <?php
-require_once 'connexion.php';
+// require_once 'connexion.php';
 
 class Moto {
     private $serialNumber;
@@ -61,9 +61,33 @@ class Moto {
         return $this->price;
     }
 
+    function setSerialNumber($serialNumber)
+        {
+            $this->serialNumber = $serialNumber;
+        }
+        function setBrand($brand)
+        {
+            $this->brand = $brand;
+        }
+        function setModel($model)
+        {
+            $this->model = $model;
+        }
+        function setCylinder($cylinder)
+        {
+            $this->cylinder = $cylinder;
+        }
+        function setCategory($category)
+        {
+            $this->category = $category;
+        }
+        function setPrice($price)
+        {
+            $this->price = $price;
+        }
+
     // function getMotos($brand)
     // {
-    //     $db = dbConnect();
     //     $motos = $db->prepare('SELECT * FROM Moto WHERE $brand = ? ORDER BY price');
     //     $motos->execute(array($brand));
 
@@ -73,15 +97,6 @@ class Moto {
     // function getAll(){
     //     $patients=$this->base->query("SELECT * FROM patients");
     //     return $patients->fetchAll();
-    // }
-
-    // function getBrand($idBrand)
-    // {
-    //     $db = dbConnect();
-    //     $req = $db->prepare('SELECT name FROM Brand WHERE id = ?');
-    //     $req->execute(array($idBrand));
-    //     $brand = $req->fetch();
-    //     return $brand;
     // }
 
     }

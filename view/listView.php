@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>list_ktm</title>
+  <title>toutes les motos</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -54,8 +54,8 @@
     </div>
   </header><!-- End Header -->
 <main id="main">
-    <h1>Liste de toutes les motos de marque KTM en stock</h1>
-        <table class="table table-responsive table-bordered table-hover text-center" id="list">                
+    <h1>Liste de toutes les motos en stock</h1>
+        <table class="table table-responsive table-bordered table-hover text-center tableau" id="list">                
             <thead>
                 <tr>
                     <th scope="col">serie</th>
@@ -84,11 +84,10 @@
                     ?> 
             </tbody>
         </table>
-                </main>    
-    </div>
+    </main>    
 
     <!-- ======= Footer ======= -->
- <footer class="fixed-bottom" id="footer">
+ <footer class="fixed-bottom footer" id="footer">
 
 <div class="container">
   <div class="copyright">

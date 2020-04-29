@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #main {
-  margin-top: 80px;
+  margin: 80px 10px 150px 10px;
 }
 
 /*--------------------------------------------------------------
@@ -625,6 +625,23 @@ section {
     margin: 0 auto 30px auto;
   }
 }
+
+/*--------------------------------------------------------------
+# lists
+--------------------------------------------------------------*/
+#main h1{
+  text-align: center;
+  margin: 120px auto 30px auto;
+}
+
+.tableau{
+  width: 100%;  
+}
+
+table.dataTable, table.dataTable th, table.dataTable td {
+  box-sizing: border-box;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
